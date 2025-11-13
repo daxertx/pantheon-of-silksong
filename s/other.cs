@@ -673,7 +673,7 @@ namespace SilksongBossRush
                 if (tool == null)
                     continue;
 
-                if (!tool.IsUnlocked)
+                if (!tool.IsUnlocked  && !tool.name.Contains("Dazzle Bind"))
                 {
                     // Unlock without tutorial popups
                     tool.Unlock(null, ToolItem.PopupFlags.None);
